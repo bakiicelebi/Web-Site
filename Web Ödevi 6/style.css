@@ -1,0 +1,120 @@
+html {
+    font-size: 6px;
+}
+
+body {
+    margin: 0px;
+}
+
+#profile {
+    background: radial-gradient(circle, #262525, #141313, #000000);
+    margin-left: 15%;
+    padding-top: 5%;
+    height: 30%;
+
+}
+
+#profile_photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 25%;
+    height: auto;
+    box-shadow: 0px 0px 50px 50px #141313;
+
+}
+
+#profile_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#about {
+    color: #948989d4;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 10%;
+}
+
+#about_content {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#splitter {
+    border-width: 2px !important;
+    border-color: #948989d4;
+    border-style: solid;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#hobies {
+    margin-left: 15%;
+    height: 100%;
+    display: block;
+    background-color: #000000;
+}
+
+#slider_music {
+    top: 10%;
+    bottom: 10%;
+    left: 80%;
+}
+
+#education_header{
+    position: absolute;
+    display: inline-block;
+    margin-left: 15%;
+    width: 85%;
+}
+#education_primary{
+    position: absolute;
+    color: #8b8989c6;
+    font-size: 3rem;
+    background-color: #2b2a2a1b;
+    top: 5%;
+    width: 25%;
+    margin-left: 7%;
+    padding: 2%;
+    border: solid #8b8989c6;
+    border-radius: 5%;
+    text-align: center;
+}
+#education_middle{
+    position: absolute;
+    color: #8b8989c6;
+    font-size: 3rem;
+    background-color: #2b2a2a1b;
+    top: 5%;
+    width: 25%;
+    margin-left: 37.5%;
+    padding: 2%;
+    border: solid #8b8989c6;
+    border-radius: 5%;
+    text-align: center;
+}
+#education_license{
+    position: absolute;
+    color: #8b8989c6;
+    font-size: 3rem;
+    background-color: #2b2a2a1b;
+    top: 5%;
+    width: 25%;
+    margin-left: 68%;
+    padding: 2%;
+    border: solid #8b8989c6;
+    border-radius: 5%;
+    text-align: center;
+}
+
+
+
+#education_header_img{
+    max-width: 100%;
+
+}
