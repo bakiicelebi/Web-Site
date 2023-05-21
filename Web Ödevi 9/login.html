@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="nav1">
+        <div id="menu">
+            <ul id="list1">
+                <li id="nav_home" class="nav_a"><a href="index.html" class="nav_link"><i
+                            class="fa-solid fa-house"></i><br>Anasayfa</a></li>
+                <li id="nav_education" class="nav_a"><a href="education.html" class="nav_link"><i
+                            class="fa-solid fa-user-graduate"></i><br>Eğitim</a>
+                </li>
+                <li id="nav_city" class="nav_a"><a href="city.html" class="nav_link"><i
+                            class="fa-solid fa-tree-city"></i><br>Şehrim</a></li>
+                <li id="nav_legacy" class="nav_a"><a href="legacy.html" class="nav_link"><i
+                            class="fa-solid fa-person-circle-exclamation"></i><br>Miraslar</a></li>
+                <li id="nav_contact" class="nav_a"><a href="contact.html" class="nav_link"><i
+                            class="fa-solid fa-envelope"></i><br>İletişim</a></li>
+                <li id="nav_login" style="background-color: #2b2a2a;" class="nav_a"><a href="login.html"
+                        class="nav_link"><i class="fa-solid fa-user"></i><br>Giriş
+                        Yap</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <header>
+        <div id="login_panel">
+            <div id="login_icon">
+                <img src="images/login_panel.svg" alt="">
+            </div>
+            <div id="login_mail"><input id="login_mail_input" type="email" placeholder="Mail Adresiniz"
+                    class="login_input" required>
+            </div>
+            <div id="login_password"><input id="login_password_input" type="password" placeholder="Şifreniz" required>
+                <button id="login_password_button" onclick="togglePasswordVisibility()">
+                    <i id="icon" class="fas fa-eye"></i>
+                </button>
+            </div>
+
+            <div id="login_button">
+                <button>Giriş Yap</button>
+            </div>
+        </div>
+
+    </header>
+
+    <footer id="foot" class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-lg btn-floating m-2" target="_blank"
+                    href="https://www.twitter.com/_musicene" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-lg btn-floating m-2" href="https://www.taplink.cc/musicene"
+                    target="_blank" role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-lg btn-floating m-2" href="https://www.instagram.com/musicene"
+                    target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-lg btn-floating m-2" target="_blank"
+                    href="https://www.linkedin.com/in/bakicelebi" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-lg btn-floating m-2" target="_blank"
+                    href="https://github.com/bakiicelebi" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://www.taplink.cc/musicene" target="_blank">Web Sitemi Ziyaret Edin</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("login_password_input");
+            var icon = document.getElementById("icon");
+
+            
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>
